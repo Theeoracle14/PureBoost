@@ -1,0 +1,306 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+background-color: #4158D0;
+background-image: linear-gradient(180deg, #000 0%, #4158D0 10%, #C850C0 46%, #FFCC70 100%);
+
+    color: #ffffff;
+}
+/* CSS for the navigation bar */
+nav {
+    position: fixed; /* Keeps the nav at the top of the page */
+    top: 10px;
+    left: 100px;
+    right: 100px;
+    width: 80%;
+    justify-content: center;
+    background: rgba(198, 176, 176, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Applies the blur effect */
+    border-radius: 20px; /* Curved bottom corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for better visibility */
+    padding: 10px 10px; /* Adjust padding as needed */
+    z-index: 1000; /* Ensures it stays on top of other elements */
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    margin: 0 15px;
+  }
+  
+  .nav-menu a {
+    color: #000000; /* Change to your preferred link color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-menu a:hover {
+    color: #FB8500; /* Color on hover */
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  
+  .cart-icon {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .cart-icon:hover {
+    color: #FB8500; /* Color on hover */
+  }
+  
+
+.search-bar {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ff9d00;
+    border-radius: 20px;
+}
+
+.cart-icon {
+    text-decoration: none;
+    font-size: 20px; /* Adjust as needed */
+    color: #000000; /* Adjust as needed */
+}
+
+
+/* General styles for the header */
+.header-background {
+    background-image: url('./img/anime_run.png');
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding: 20px;
+    height: 100vh; /* Full viewport height */
+    background-size: auto; /* Ensures the image covers the background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Styling for the text content */
+.header-text {
+    flex: 1;
+    margin-right: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.header-text h1 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.header-text p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 10px 0;
+    padding-bottom: 38px;
+}
+
+.cta-button {
+    padding: 15px 25px;
+    background-color: #520064;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff9d00;
+}
+
+
+/* styling for run image */
+#animerun{
+    display: contents;
+}
+
+/* Styling for the can image */
+#canette {
+    flex: 1;
+    justify-content: center;
+}
+
+#canette img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto;    /* Keeps the aspect ratio */
+    max-height: 80vh; /* Limits the height to 80% of the viewport */
+    object-fit: contain; /* Ensures the image scales well */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #canette img {
+        max-width: 70%;
+        max-height: 50vh;
+    }
+}
+
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff6f00;
+}
+
+/* Blog Section */
+.blog-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blog-post h3 {
+    color: #ff6f00;
+}
+
+/* Produits Section */
+.produit-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produit {
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    width: 40%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.produit h3 {
+    color: #ff6f00;
+}
+
+/* Partenariats Section */
+.partenariat-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.partenariat-container img {
+    max-width: 150px;
+    margin: 20px;
+}
+
+/* Footer style */
+.footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px 0;
+  }
+  
+  .footer h4 {
+    margin-bottom: 20px;
+  }
+  
+  .footer-menu,
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-menu li,
+  .social-icons li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-menu a,
+  .social-icons a {
+    color: #fff; /* White text */
+    text-decoration: none;
+  }
+  
+  .footer-menu a:hover,
+  .social-icons a:hover {
+    color: #007bff; /* Blue text on hover */
+    text-decoration: underline;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  /* Ensures the footer columns align horizontally */
+  .footer .row {
+    display: flex;
+    justify-content: space-between; /* Adjust space between columns */
+    flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+  }
+  
+  @media (max-width: 768px) {
+    .footer .row {
+      flex-direction: column; /* Stacks the footer elements vertically on smaller screens */
+    }
+  }
+  
